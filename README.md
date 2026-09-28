@@ -335,16 +335,6 @@ This script performs probability calibration and generates SHAP waterfall plots 
 
 ---
 
-## 📄 Full report
-
-The complete project report is available here:
-
-**[📘 Rapport_RandomForest_Tumeurs.pdf](report/Rapport_RandomForest_Tumeurs.pdf)**
-
-It contains the methodology, model comparison, interpretability analysis, calibration study, individual cases and limitations. fileciteturn0file0L9-L24
-
----
-
 ## 🧰 Technologies
 
 - **Python**
