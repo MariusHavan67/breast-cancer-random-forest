@@ -139,8 +139,6 @@ Top variables in the recorded results include:
 
 fileciteturn0file1L15-L21
 
-![Permutation importance](figures/fig_permutation.png)
-
 ---
 
 ### 2. SHAP global importance
@@ -160,13 +158,9 @@ Top features:
 
 fileciteturn0file1L23-L29
 
-![SHAP importance](figures/fig_shap_bar.png)
-
 ### SHAP beeswarm
 
 The beeswarm provides both **feature importance** and **direction of impact** across observations.
-
-![SHAP beeswarm](figures/fig_shap_beeswarm.png)
 
 ---
 
@@ -175,8 +169,6 @@ The beeswarm provides both **feature importance** and **direction of impact** ac
 Partial dependence plots show how the model output changes as a feature varies, while averaging over the other variables.
 
 The project focuses on the four most influential variables identified through SHAP and generates their partial-dependence curves. fileciteturn0file3L173-L184
-
-![Partial dependence](figures/fig_pdp.png)
 
 ---
 
@@ -192,8 +184,6 @@ An **isotonic calibration** is compared with the raw Random Forest probabilities
 
 On this dataset, the recorded Brier scores are approximately **0.033 before and after calibration**, with both curves close to the calibration diagonal. fileciteturn0file0L142-L154
 
-![Calibration curve](figures/fig_calibration.png)
-
 ---
 
 ## 👤 Local explanations — three representative cases
@@ -204,19 +194,13 @@ The project also generates SHAP waterfall plots for three representative test-se
 
 The model assigns a calibrated benign probability of **100%** in the report's selected case.
 
-![Clearly benign case](figures/fig_patient_9.png)
-
 ### 🟥 Clearly malignant case
 
 The selected malignant case receives a calibrated benign probability of **0%**.
 
-![Clearly malignant case](figures/fig_patient_1.png)
-
 ### 🟪 Uncertain case
 
 A third observation lies close to the decision threshold, with a calibrated benign probability of approximately **52%**. The waterfall shows competing contributions rather than a single coherent direction. fileciteturn0file0L183-L194
-
-![Uncertain case](figures/fig_patient_88.png)
 
 This is particularly useful for demonstrating why **probability + explanation + uncertainty** can be more informative than a simple binary label.
 
