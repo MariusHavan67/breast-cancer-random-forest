@@ -1,0 +1,31 @@
+{
+  "acc_base": 0.958041958041958,
+  "auc_base": 0.9948637316561845,
+  "acc_opt": 0.951048951048951,
+  "auc_opt": 0.9943396226415094,
+  "cv_auc": 0.9911837678366131,
+  "best_params": {
+    "n_estimators": 800,
+    "min_samples_split": 5,
+    "min_samples_leaf": 4,
+    "max_features": "log2",
+    "max_depth": 10,
+    "class_weight": "balanced"
+  },
+  "top_perm": {
+    "worst concave points": 0.0023,
+    "mean concave points": 0.0015,
+    "worst concavity": 0.0014,
+    "worst area": 0.0011,
+    "worst texture": 0.001,
+    "mean texture": 0.0007
+  },
+  "top_shap": {
+    "worst area": 0.0625,
+    "worst perimeter": 0.0623,
+    "worst concave points": 0.0541,
+    "worst radius": 0.0512,
+    "mean concave points": 0.0437,
+    "mean radius": 0.0268
+  }
+}
